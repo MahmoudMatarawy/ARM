@@ -33,11 +33,11 @@ int main(void)
     wdt_cfg.wdt_int = USE_NORMAL_INT;
     wdt_cfg.pf_wdt_cb =wdt_cb;
     wdt_init(&wdt_cfg);
+	
 	/* Superloop */
     while(1)
 	{
         /*Other Modules Logic*/
-		wdt_reset(WDT0);
+		//wdt_reset(WDT0);
 	}
-
 }

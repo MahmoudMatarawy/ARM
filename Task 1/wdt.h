@@ -67,20 +67,5 @@ void wdt_reset(wdt_index_t wdtn);
  */
 boolean wdt_get_int_status(wdt_index_t wdtn);
 
-/**
- *  @brief 			This function resets the WDT to start from the max.
- *  @param[in]		wdtn: WDT index
- */
-void wdt_reset(wdt_index_t wdtn);
-/**
- *   @brief This function check the status of an interrupt.
- *   @param[in]	wdtn: WDT index to check its interrupt status
- *  @return ::TRUE in case of timeout occured, fasle, if timeout did not occur
- */
-boolean wdt_get_int_status(wdt_index_t wdtn);
-/**
- *   @brief This function deinitializes the wdt hal.
- *   @param[in]	wdtn: WDT index to disable
- */
 void wdt_deinit(wdt_index_t wdtn);
 

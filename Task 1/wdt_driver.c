@@ -107,8 +107,8 @@ int32_t wdt_init(wdt_cfg_t* pwdt_cfg)
 			wait_for_wdt1(pwdt_cfg->wdt_index);
 			SET_BIT(WDTCTL(pwdt_cfg->wdt_index),INTEN_IDX);
             wait_for_wdt1(pwdt_cfg->wdt_index);
-//            NVIC_EnableIRQ(WATCHDOG0_IRQn);
-//            __enable_irq();
+            NVIC_EnableIRQ(WATCHDOG0_IRQn);
+            __enable_irq();
 
 
 		}
@@ -116,8 +116,8 @@ int32_t wdt_init(wdt_cfg_t* pwdt_cfg)
 		{
 			SET_BIT(WDTCTL(pwdt_cfg->wdt_index),INTEN_IDX);
             wait_for_wdt1(pwdt_cfg->wdt_index);
-//            NVIC_EnableIRQ(WATCHDOG0_IRQn);
-//            __enable_irq();
+            NVIC_EnableIRQ(WATCHDOG0_IRQn);
+            __enable_irq();
 
 		}
 		if (pwdt_cfg->use_test_mode)
