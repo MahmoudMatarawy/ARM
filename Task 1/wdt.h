@@ -83,3 +83,4 @@ boolean wdt_get_int_status(wdt_index_t wdtn);
  *   @param[in]	wdtn: WDT index to disable
  */
 void wdt_deinit(wdt_index_t wdtn);
+

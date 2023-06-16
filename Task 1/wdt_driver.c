@@ -179,3 +179,4 @@ void wdt_deinit(wdt_index_t wdtn)
 		/*Invalid Index*/
 	}
 }
+
